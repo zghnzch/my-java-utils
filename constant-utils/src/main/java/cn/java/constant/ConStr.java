@@ -113,6 +113,11 @@ public class ConStr {
 	public final static String EVENT = "event";
 	/**
 	 * 常用标点符号
+	 * 逗号
 	 */
 	public final static String COMMA = ",";
+	/**
+	 * 井号
+	 */
+	public final static String POUND_KEY = "#";
 }
