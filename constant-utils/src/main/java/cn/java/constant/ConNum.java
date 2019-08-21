@@ -101,5 +101,6 @@ public class ConNum {
     public final static BigDecimal BIGP100 = new BigDecimal(P100);
     public final static BigDecimal BIGZ0 = new BigDecimal(Z0);
     public final static BigDecimal BIGN1 = new BigDecimal(N1);
+    public final static BigDecimal BIGN10 = new BigDecimal(P10);
     public final static BigDecimal BIG_N86400000 = new BigDecimal(P86400000);
 }
