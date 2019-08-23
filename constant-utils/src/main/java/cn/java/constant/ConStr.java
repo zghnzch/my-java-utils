@@ -57,6 +57,7 @@ public class ConStr {
 	public final static String OK = "OK";
 	public final static String RESULT_CODE = "result_code";
 	public final static String SUCCESS = "SUCCESS";
+	public final static String ON = "on";
 	/**
 	 * 路径
 	 */
