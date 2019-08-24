@@ -150,4 +150,39 @@ public class ConStr {
 	public final static String X = "X";
 	public final static String Y = "Y";
 	public final static String Z = "Z";
+	/**
+	 * 消费记录处理线程池名称 5 usages
+	 */
+	public final static String THREAD_POOL_CONSUME_RECORD = "consumeRecordPool";
+	/**
+	 * 设备请求线程池名称  THREAD_POOL_DEVICE_ASK  5
+	 */
+	public final static String THREAD_POOL_DEVICE_ASK = "deviceAskPool";
+	/**
+	 * 设备命令列表线程池名称  THREAD_POOL_DEVICE_CMD 3
+	 */
+	public final static String THREAD_POOL_DEVICE_CMD = "deviceCmdPool";
+	/**
+	 * 系统后台线程池名称 THREAD_POOL_DEFAULT  3
+	 */
+	public final static String THREAD_POOL_DEFAULT = "defaultPool";
+	/**
+	 * 命令列表字符串
+	 */
+	public final static String UPDATEQRCODE = "updateQrCode";
+	/*常用固定时间-------------*/
+	/**
+	 * 卡的有效期 结束时间 2099 千年虫
+	 */
+	public final static String CARD_END_TIME = "2099-12-30";
+	/*微信支付宝相关String----------------------------*/
+	/**
+	 * 常用标点符号名称
+	 */
+	public final static String SHARP_MARK = "#";
+	public final static String CONNECTION = "Connection";
+	public final static String REFUSED = "refused";
+	public final static String POST = "POST";
+	public final static String GET = "GET";
+	public final static String UTF8 = "UTF-8";
 }

@@ -5,6 +5,8 @@ import java.math.BigDecimal;
  * 190426 数字型常量
  */
 public class ConNum {
+	public final static boolean TRUE = true;
+	public final static boolean FALSE = false;
 	/**
 	 * 0
 	 */
@@ -23,9 +25,10 @@ public class ConNum {
 	public final static int P9 = 9;
 	public final static int P10 = 10;
 	public final static int P16 = 16;
-	public final static int P32 = 32;
 	public final static int P30 = 30;
 	public final static int P31 = 31;
+	public final static int P32 = 32;
+	public final static int P33 = 33;
 	public final static int P36 = 36;
 	public final static int P39 = 39;
 	public final static int P40 = 40;
@@ -61,6 +64,8 @@ public class ConNum {
 	public final static int P98 = 98;
 	public final static int P99 = 99;
 	public final static int P100 = 100;
+	public final static int P202 = 202;
+	public final static int P203 = 203;
 	public final static int P241 = 241;
 	public final static int P243 = 243;
 	public final static int P244 = 244;
@@ -105,4 +110,73 @@ public class ConNum {
 	public final static BigDecimal BIGN1 = new BigDecimal(N1);
 	public final static BigDecimal BIGN10 = new BigDecimal(P10);
 	public final static BigDecimal BIG_N86400000 = new BigDecimal(P86400000);
+	/**
+	 * 水控机
+	 */
+	public final static Integer DEVICE_WATER = 3;
+	/**
+	 * 售饭机
+	 */
+	public final static Integer DEVICE_GOODS = 2;
+	/**
+	 * 关键帧 30
+	 */
+	public final static Integer KEYB_30 = 30;
+	/**
+	 * 关键帧 31
+	 */
+	public final static Integer KEYB_31 = 31;
+	/**
+	 * 关键帧 32
+	 */
+	public final static Integer KEYB_32 = 32;
+	/**
+	 * 关键帧 33
+	 */
+	public final static Integer KEYB_33 = 33;
+	/**
+	 * 存款/充值机充值
+	 */
+	public final static Integer DEVICE_CHARGE = 98;
+	/**
+	 * 退款/取款机退款
+	 */
+	public final static Integer DEVICE_TAKE = 99;
+	/**
+	 * 信道干扰字节
+	 */
+	public final static Integer LENGTH_DISTURBYTE = 40;
+	/**
+	 * 信道干扰字节-数据  181014 信道干扰长度调整为 41
+	 */
+	public final static Integer LENGTH_DISTURDATABYTE = 41;
+	public final static int P20 = 20;
+	public final static int P28 = 28;
+	public final static int P34 = 34;
+	public final static int P73 = 73;
+	public final static int P93 = 93;
+	public final static int P101 = 101;
+	public final static int P102 = 102;
+	public final static int P103 = 103;
+	public final static int P104 = 104;
+	public final static int P105 = 105;
+	public final static int P106 = 106;
+	public final static int P200 = 200;
+	public final static int P600 = 600;
+	public final static int P500 = 500;
+	public final static int P5000 = 5000;
+	public final static int CONNECT_TIMEOUT = 10000;
+	public final static int CONNECTION_REQUEST_TIMEOUT = 10000;
+	public final static int SOCKET_TIMEOUT = 15000;
+	public final static boolean REDIRECTS_ENABLED = true;
+	/*---负数区---------------------------*/
+	/**
+	 * 负数区
+	 */
+	public final static int N3 = -3;
+	/*---特殊意义的值-----------------------------*/
+	/**
+	 * BigDecimal  除法中用
+	 */
+	public final static BigDecimal BIGP1 = new BigDecimal(P1);
 }
