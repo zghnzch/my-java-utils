@@ -153,19 +153,19 @@ public class ConStr {
 	/**
 	 * 消费记录处理线程池名称 5 usages
 	 */
-	public final static String THREAD_POOL_CONSUME_RECORD = "consumeRecordPool";
+	// public final static String THREAD_POOL_CONSUME_RECORD = "consumeRecordPool";
 	/**
 	 * 设备请求线程池名称  THREAD_POOL_DEVICE_ASK  5
 	 */
-	public final static String THREAD_POOL_DEVICE_ASK = "deviceAskPool";
+	// public final static String THREAD_POOL_DEVICE_ASK = "deviceAskPool";
 	/**
 	 * 设备命令列表线程池名称  THREAD_POOL_DEVICE_CMD 3
 	 */
-	public final static String THREAD_POOL_DEVICE_CMD = "deviceCmdPool";
+	// public final static String THREAD_POOL_DEVICE_CMD = "deviceCmdPool";
 	/**
 	 * 系统后台线程池名称 THREAD_POOL_DEFAULT  3
 	 */
-	public final static String THREAD_POOL_DEFAULT = "defaultPool";
+	// public final static String THREAD_POOL_DEFAULT = "defaultPool";
 	/**
 	 * 命令列表字符串
 	 */
