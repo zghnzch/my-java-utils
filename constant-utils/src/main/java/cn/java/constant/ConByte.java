@@ -11,7 +11,6 @@ import java.lang.reflect.Field;
  * @package
  */
 public class ConByte {
-	public static final byte B_0DD = (byte) 0xDD;
 	/**
 	 * common byte
 	 */
@@ -25,6 +24,15 @@ public class ConByte {
 	public static final byte B_007 = 0x07;
 	public static final byte B_008 = 0x08;
 	public static final byte B_009 = 0x09;
+	public static final byte B_00A = 0x0A;
+	public static final byte B_00B = 0x0B;
+	public static final byte B_00C = 0x0C;
+	public static final byte B_00D = 0x0D;
+	public static final byte B_00E = 0x0E;
+	public static final byte B_00F = 0x0F;
+	/**
+	 *
+	 */
 	public static final byte B_010 = 0x10;
 	public static final byte B_011 = 0x11;
 	public static final byte B_012 = 0x12;
@@ -35,6 +43,15 @@ public class ConByte {
 	public static final byte B_017 = 0x17;
 	public static final byte B_018 = 0x18;
 	public static final byte B_019 = 0x19;
+	public static final byte B_01A = 0x1A;
+	public static final byte B_01B = 0x1B;
+	public static final byte B_01C = 0x1C;
+	public static final byte B_01D = 0x1D;
+	public static final byte B_01E = 0x1E;
+	public static final byte B_01F = 0x1F;
+	/**
+	 *
+	 */
 	public static final byte B_020 = 0x20;
 	public static final byte B_021 = 0x21;
 	public static final byte B_022 = 0x22;
@@ -45,6 +62,15 @@ public class ConByte {
 	public static final byte B_027 = 0x27;
 	public static final byte B_028 = 0x28;
 	public static final byte B_029 = 0x29;
+	public static final byte B_02A = 0x2A;
+	public static final byte B_02B = 0x2B;
+	public static final byte B_02C = 0x2C;
+	public static final byte B_02D = 0x2D;
+	public static final byte B_02E = 0x2E;
+	public static final byte B_02F = 0x2F;
+	/**
+	 *
+	 */
 	public static final byte B_030 = 0x30;
 	public static final byte B_031 = 0x31;
 	public static final byte B_032 = 0x32;
@@ -55,6 +81,15 @@ public class ConByte {
 	public static final byte B_037 = 0x37;
 	public static final byte B_038 = 0x38;
 	public static final byte B_039 = 0x39;
+	public static final byte B_03A = 0x3A;
+	public static final byte B_03B = 0x3B;
+	public static final byte B_03C = 0x3C;
+	public static final byte B_03D = 0x3D;
+	public static final byte B_03E = 0x3E;
+	public static final byte B_03F = 0x3F;
+	/**
+	 *
+	 */
 	public static final byte B_040 = 0x40;
 	public static final byte B_041 = 0x41;
 	public static final byte B_042 = 0x42;
@@ -65,6 +100,9 @@ public class ConByte {
 	public static final byte B_047 = 0x47;
 	public static final byte B_048 = 0x48;
 	public static final byte B_049 = 0x49;
+	/**
+	 *
+	 */
 	public static final byte B_050 = 0x50;
 	public static final byte B_051 = 0x51;
 	public static final byte B_052 = 0x52;
@@ -75,6 +113,9 @@ public class ConByte {
 	public static final byte B_057 = 0x57;
 	public static final byte B_058 = 0x58;
 	public static final byte B_059 = 0x59;
+	/**
+	 *
+	 */
 	public static final byte B_060 = 0x60;
 	public static final byte B_061 = 0x61;
 	public static final byte B_062 = 0x62;
@@ -85,6 +126,9 @@ public class ConByte {
 	public static final byte B_067 = 0x67;
 	public static final byte B_068 = 0x68;
 	public static final byte B_069 = 0x69;
+	/**
+	 *
+	 */
 	public static final byte B_070 = 0x70;
 	public static final byte B_071 = 0x71;
 	public static final byte B_072 = 0x72;
@@ -95,25 +139,34 @@ public class ConByte {
 	public static final byte B_077 = 0x77;
 	public static final byte B_078 = 0x78;
 	public static final byte B_079 = 0x79;
-	// public static final byte B_080 = 0x80
+	public static final byte B_07A = 0x7A;
+	public static final byte B_07B = 0x7B;
+	/**
+	 *
+	 */
+	public static final byte B_0DD = (byte) 0xDD;
 	/**
 	 * 测试
 	 * @param args all bytes
 	 */
 	public static void main(String[] args) {
 		ConByte f = new ConByte();
+		int ta = B_0DD & 0xFF;
+		System.out.println(B_0DD + " ===== " + ta);
 		// 获取f对象对应类中的所有属性域
 		Field[] fields = f.getClass().getDeclaredFields();
+		int i = 0;
 		for (Field field : fields) {
 			// 对于每个属性，获取属性名
 			try {
 				String varName = field.getName();
 				Object obj = field.get(varName);
-				System.out.println(varName + " " + obj);
+				System.out.println(i+" "+varName + " " + obj);
 			}
 			catch (IllegalAccessException e) {
 				e.printStackTrace();
 			}
+			i++;
 		}
 	}
 }

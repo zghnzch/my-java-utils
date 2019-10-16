@@ -57,4 +57,14 @@ public class ConvertLetterNum {
 			System.out.println("public final static String " + letter + " = " + "\"" + letter + "\""+";");
 		}
 	}
+	public static void testNumToLetterEquivalent() {
+		String letter;
+		for (int i = 1; i <= 26; i++) {
+			letter = ConvertLetterNum.num2Letter(i);
+			System.out.println(i+" "+letter);
+		}
+	}
+	public static void main(String[] args) {
+		testNumToLetterEquivalent();
+	}
 }
